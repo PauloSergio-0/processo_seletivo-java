@@ -49,7 +49,7 @@ class candidatoValidator {
 
     public void ligarCandidato(String candidato){
         int tentativa = 1;
-        Boolean atendeu= false;
+        Boolean atendeu = false;
         boolean ligarNovamente;
 
         do{
@@ -61,7 +61,7 @@ class candidatoValidator {
             } else{
                 System.out.println("ligação concluída com sucesso: "+ candidato);
             }
-        } while(atendeu && tentativa < 3);
+        } while(ligarNovamente && tentativa < 3);
 
 
         if (atendeu){
